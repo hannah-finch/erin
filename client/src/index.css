@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Kocha";
+  src: url("client/src/assets/fonts/kocha/kocha-clean-webfont.woff2"),
+    url("client/src/assets/fonts/kocha/kocha-clean-webfont.woff");
+}
+
+@theme {
+  --color-soft: #3d3d3d12;
+  --color-gray: #dcdcdc;
+  --color-green: #65c4a6;
+  --color-blue: #3aaacc;
+  --color-navy: #00798c;
+  --color-yellow: #edd03e;
+  --color-red: #e1765e;
+  --color-purple: #9298e0;
+
+  --font-kocha: Kocha, serif;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded; 
+}
+.btn-blue {
+  @apply bg-blue text-white;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+
+.btn-nav {
+  @apply border-b-3 border-transparent py-4 px-2 mt-1
+}
+.btn-nav:hover {
+  @apply border-gray
+}
+
+.line-v {
+  @apply w-1 bg-soft mx-2
+}
+
+.asdf {
+  color: #dcdcdc
+}
