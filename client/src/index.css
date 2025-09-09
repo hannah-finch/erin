@@ -9,7 +9,10 @@
 @theme {
   --color-soft: #3d3d3d12;
   --color-gray: #dcdcdc;
+  --color-gray-dark: #505050;
   --color-green: #65c4a6;
+  --color-green-dark: #40a19a;
+
   --color-blue: #3aaacc;
   --color-navy: #00798c;
   --color-yellow: #edd03e;
@@ -17,7 +20,25 @@
   --color-purple: #9298e0;
 
   --font-kocha: Kocha, serif;
+  --font-sans: Quicksand, sans;
 }
+
+
+/* Typography --------------------------------------------- */
+.h1 {
+  @apply text-6xl;
+}
+
+.h3 {
+  @apply uppercase tracking-widest
+}
+
+.caps {
+  @apply tracking-[.05em] font-bold;
+}
+
+
+/* Buttons -------------------------------------------------*/
 
 .btn {
   @apply font-bold py-2 px-4 rounded; 
@@ -26,20 +47,23 @@
   @apply bg-blue text-white;
 }
 .btn-blue:hover {
-  @apply bg-blue-700;
+  @apply bg-navy;
+}
+
+.btn-green {
+  @apply bg-green text-white;
+}
+.btn-green:hover {
+  @apply bg-green-dark;
 }
 
 .btn-nav {
-  @apply border-b-3 border-transparent py-4 px-2 mt-1
+  @apply border-b-3 border-transparent py-4 px-2 mt-1;
 }
 .btn-nav:hover {
-  @apply border-gray
+  @apply border-gray;
 }
 
 .line-v {
-  @apply w-1 bg-soft mx-2
-}
-
-.asdf {
-  color: #dcdcdc
+  @apply w-1 bg-soft mx-2;
 }
