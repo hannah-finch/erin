@@ -7,6 +7,18 @@
 }
 
 @theme {
+  /* --color-accent: #9298e0;
+  --color-accent-light: #cddfff;
+  --color-accent-dark: #6a70b8; */
+
+  --color-accent: #3aaacc;
+  --color-accent-light: #e1f1f7;
+  --color-accent-dark: #00798c;
+/* 
+  --color-accent: #65c4a6;
+  --color-accent-light: #c7f4e5;
+  --color-accent-dark: #40a19a; */
+
   --color-soft: #3d3d3d12;
   --color-gray: #dcdcdc;
   --color-gray-dark: #505050;
@@ -28,13 +40,16 @@
 .h1 {
   @apply text-6xl;
 }
+.h2 {
+  @apply text-5xl;
+}
 
 .h3 {
   @apply uppercase tracking-widest
 }
 
 .caps {
-  @apply tracking-[.05em] font-bold;
+  @apply tracking-[.05em]
 }
 
 
@@ -66,4 +81,8 @@
 
 .line-v {
   @apply w-1 bg-soft mx-2;
+}
+
+.asdf {
+  color: #c7f4e5
 }
